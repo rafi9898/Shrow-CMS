@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext");
+
+$colors: (
+  lightdark: #3e3e3e,
+  dark: #3d3d3d,
+  pink: #ff7b7b,
+  lightgreen: #5cb85c,
+  white: #ffffff
+);
+
+@function color($color) {
+  @return map-get($colors, $color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+}
+
+.btn-green {
+  background-color: color(lightgreen);
+  color: color(white);
+  border-radius: 14px;
+  border: none;
+  width: 24%;
+  height: 40px;
+  box-shadow: 0px 1px 2px color(lightdark);
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+
+  &:focus {
+    transform: translateY(-2px);
+  }
+}
+
+#login-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: color(white);
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    h1 {
+      margin-left: 40px;
+      padding: 40px;
+      color: color(dark);
+      font-size: 2.2em;
+      letter-spacing: 1.3px;
+    }
+  }
+
+  .form-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h2 {
+      font-size: 1.4em;
+      color: color(lightdark);
+      margin-bottom: 30px;
+    }
+
+    .container {
+      width: 80vw;
+      text-align: center;
+      form {
+        input {
+          display: block;
+          margin-bottom: 15px;
+          height: 43px;
+          width: 40%;
+          text-align: center;
+          margin: 0 auto 15px auto;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+
+  .blur {
+    width: 300px;
+    height: 300px;
+    border-radius: 90%;
+    background-color: color(pink);
+    position: absolute;
+    bottom: -110px;
+    right: -110px;
+  }
+
+  footer {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    p {
+      font-size: 1.1em;
+      font-weight: bold;
+      letter-spacing: 0.4px;
+      color: color(lightdark);
+    }
+  }
+}

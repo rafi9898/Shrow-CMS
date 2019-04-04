@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin-ext");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+}
+
+.btn-green {
+  background-color: #5cb85c;
+  color: #ffffff;
+  border-radius: 14px;
+  border: none;
+  width: 24%;
+  height: 40px;
+  -webkit-box-shadow: 0px 1px 2px #3e3e3e;
+          box-shadow: 0px 1px 2px #3e3e3e;
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+}
+
+.btn-green:focus {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+#login-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+#login-page header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#login-page header h1 {
+  margin-left: 40px;
+  padding: 40px;
+  color: #3d3d3d;
+  font-size: 2.2em;
+  letter-spacing: 1.3px;
+}
+
+#login-page .form-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#login-page .form-box h2 {
+  font-size: 1.4em;
+  color: #3e3e3e;
+  margin-bottom: 30px;
+}
+
+#login-page .form-box .container {
+  width: 80vw;
+  text-align: center;
+}
+
+#login-page .form-box .container form input {
+  display: block;
+  margin-bottom: 15px;
+  height: 43px;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto 15px auto;
+  font-size: 1.2em;
+}
+
+#login-page .blur {
+  width: 300px;
+  height: 300px;
+  border-radius: 90%;
+  background-color: #ff7b7b;
+  position: absolute;
+  bottom: -110px;
+  right: -110px;
+}
+
+#login-page footer {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#login-page footer p {
+  font-size: 1.1em;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  color: #3e3e3e;
+}
+/*# sourceMappingURL=style.css.map */
